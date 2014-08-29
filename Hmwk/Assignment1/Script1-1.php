@@ -9,6 +9,6 @@
      <title>Page Title</title>
   </head>
   <body>
-     <!-- Script 1.1 - template.html --> 
+     <!-- Script 1.1 - template.html -->  
   </body>
   </html>
