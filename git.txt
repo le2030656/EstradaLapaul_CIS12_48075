@@ -1,0 +1,24 @@
+https://github.com/le2030656/EstradaLapaul_CIS12_48075
+
+create a new repository on the command line
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/le2030656/EstradaLapaul_CIS12_48075
+git push -u origin master
+
+git remote add origin https://github.com/le2030656/EstradaLapaul_CIS12_48075
+git push -u origin master
+
+
+error I get when doing "git push -u origin master"
+To https://github.com/le2030656/EstradaLapaul_CIS_48075
+ ! [rejected]     master -> master (non-fast-foward)
+error: failed to push some refs to 'https://github.com/le2030656/EstradaLapaul_CIS12_48075'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-fowards' in 'git push --help' for details.
+
+*** Fixed it: used "git pull https://github.com/le203....
