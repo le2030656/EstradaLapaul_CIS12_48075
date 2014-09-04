@@ -1,8 +1,8 @@
 <?php 
 /*
 	Lapaul Estrada
-    Sept 3rd, 2014
-    Purpose: Duplicate Truth Table
+  Sept 3rd, 2014
+  Purpose: Duplicate Truth Table
 */ 
 ?>
 
@@ -27,55 +27,97 @@ echo "<h1>Truth Table</h1>";
         	<th>!X</th>
         	<th>!Y</th>
       		<th>X&&Y</th>
-            <th>X||Y</th>
-            <th>X^Y</th>
-            <th>X^Y^Y</th>
-            <th>X^Y^X</th>
-            <th>!(X&&Y)</th>
-            <th>!X||!Y</th>
-            <th>!(X||Y)</th>
-            <th>!X&&!Y</th>
+          <th>X||Y</th>
+          <th>X^Y</th>
+          <th>X^Y^Y</th>
+          <th>X^Y^X</th>
+          <th>!(X&&Y)</th>
+          <th>!X||!Y</th>
+          <th>!(X||Y)</th>
+          <th>!X&&!Y</th>
     	</tr>
     	<tr>
         <?php
-			$x = true;
-			$y = true;
-			echo "<td>".($x?"T":"F")."</td>";
-			echo "<td>".($y?"T":"F")."</td>";
-			echo "<td>".(!$x?"T":"F")."</td>";
-			echo "<td>".(!$y?"T":"F")."</td>";
-			echo "<td>".($x&&$y?"T":"F")."</td>";
-			echo "<td>".($x||$y?"T":"F")."</td>";
-		?>
-        </tr>
+			     $x = true;
+			     $y = true;
+			     echo "<td>".($x?"T":"F")."</td>";
+			     echo "<td>".($y?"T":"F")."</td>";
+			     echo "<td>".(!$x?"T":"F")."</td>";
+			     echo "<td>".(!$y?"T":"F")."</td>";
+			     echo "<td>".($x&&$y?"T":"F")."</td>";
+			     echo "<td>".($x||$y?"T":"F")."</td>";
+           echo "<td>".($x^$y?"T":"F")."</td>";
+           echo "<td>".($x^$y^$y?"T":"F")."</td>";
+           echo "<td>".($x^$y^$x?"T":"F")."</td>";
+           echo "<td>".(!($x&&$y)?"T":"F")."</td>";
+           echo "<td>".(!$x||!$y?"T":"F")."</td>";
+           echo "<td>".(!($x||$y)?"T":"F")."</td>";
+           echo "<td>".(!$x&&!$y?"T":"F")."</td>";
+		    ?>
+      </tr>
         
-        <tr>
+      <tr>
         <?php
-			$x = true;
-			$y = false;
-			echo "<td>".($x?"T":"F")."</td>";
-			echo "<td>".($y?"T":"F")."</td>";
-			echo "<td>".(!$x?"T":"F")."</td>";
-			echo "<td>".(!$y?"T":"F")."</td>";
-			echo "<td>".($x&&$y?"T":"F")."</td>";
-			echo "<td>".($x||$y?"T":"F")."</td>";
-		?>
+			     $x = true;
+			     $y = false;
+			     echo "<td>".($x?"T":"F")."</td>";
+			     echo "<td>".($y?"T":"F")."</td>";
+			     echo "<td>".(!$x?"T":"F")."</td>";
+			     echo "<td>".(!$y?"T":"F")."</td>";
+			     echo "<td>".($x&&$y?"T":"F")."</td>";
+			     echo "<td>".($x||$y?"T":"F")."</td>";
+           echo "<td>".($x^$y?"T":"F")."</td>";
+           echo "<td>".($x^$y^$y?"T":"F")."</td>";
+           echo "<td>".($x^$y^$x?"T":"F")."</td>";
+           echo "<td>".(!($x&&$y)?"T":"F")."</td>";
+           echo "<td>".(!$x||!$y?"T":"F")."</td>";
+           echo "<td>".(!($x||$y)?"T":"F")."</td>";
+           echo "<td>".(!$x&&!$y?"T":"F")."</td>";
+		    ?>
     	</tr>
-    
-        
-        <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
-      </tbody>
-    </table>
+       
+      <tr>
+        <?php
+           $x = false;
+           $y = true;
+           echo "<td>".($x?"T":"F")."</td>";
+           echo "<td>".($y?"T":"F")."</td>";
+           echo "<td>".(!$x?"T":"F")."</td>";
+           echo "<td>".(!$y?"T":"F")."</td>";
+           echo "<td>".($x&&$y?"T":"F")."</td>";
+           echo "<td>".($x||$y?"T":"F")."</td>";
+           echo "<td>".($x^$y?"T":"F")."</td>";
+           echo "<td>".($x^$y^$y?"T":"F")."</td>";
+           echo "<td>".($x^$y^$x?"T":"F")."</td>";
+           echo "<td>".(!($x&&$y)?"T":"F")."</td>";
+           echo "<td>".(!$x||!$y?"T":"F")."</td>";
+           echo "<td>".(!($x||$y)?"T":"F")."</td>";
+           echo "<td>".(!$x&&!$y?"T":"F")."</td>";
+        ?>
+      </tr>
+      
+      <tr>
+        <?php
+           $x = false;
+           $y = false;
+           echo "<td>".($x?"T":"F")."</td>";
+           echo "<td>".($y?"T":"F")."</td>";
+           echo "<td>".(!$x?"T":"F")."</td>";
+           echo "<td>".(!$y?"T":"F")."</td>";
+           echo "<td>".($x&&$y?"T":"F")."</td>";
+           echo "<td>".($x||$y?"T":"F")."</td>";
+           echo "<td>".($x^$y?"T":"F")."</td>";
+           echo "<td>".($x^$y^$y?"T":"F")."</td>";
+           echo "<td>".($x^$y^$x?"T":"F")."</td>";
+           echo "<td>".(!($x&&$y)?"T":"F")."</td>";
+           echo "<td>".(!$x||!$y?"T":"F")."</td>";
+           echo "<td>".(!($x||$y)?"T":"F")."</td>";
+           echo "<td>".(!$x&&!$y?"T":"F")."</td>";
+        ?>
+      </tr>
+    </tbody>
+  </table>
 
 
-</body>
+  </body>
 </html>
